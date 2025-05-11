@@ -789,4 +789,32 @@ p, h1, h2, h3, h4 {
     word-break: keep-all;
     overflow-wrap: break-word;
     word-wrap: break-word;
+}
+
+/* 관리자 버튼 스타일 */
+.admin-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px;
+}
+
+.admin-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f5f3ef;
+    color: #8e6c4e;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #8e6c4e;
+    transition: all 0.3s ease;
+}
+
+.admin-link:hover {
+    background-color: #8e6c4e;
+    color: #fff;
 } 
