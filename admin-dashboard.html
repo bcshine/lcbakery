@@ -17,6 +17,33 @@
     <!-- 파비콘 -->
     <link rel="icon" href="./image/lclogo.png">
     <link rel="shortcut icon" href="./image/lclogo.png">
+    
+    <style>
+        /* 모바일 메뉴 토글 버튼 스타일 */
+        .mobile-menu-toggle {
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            width: 50px;
+            height: 50px;
+            background-color: #8e6c4e;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 50px;
+            font-size: 24px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+            z-index: 1000;
+            cursor: pointer;
+        }
+        
+        @media (max-width: 768px) {
+            .mobile-menu-toggle {
+                display: block;
+            }
+        }
+    </style>
 </head>
 <body class="admin-dashboard-page">
     <header class="admin-header">
@@ -30,8 +57,13 @@
         </div>
     </header>
 
+    <!-- 모바일 메뉴 토글 버튼 -->
+    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <i class="fas fa-bars"></i>
+    </div>
+
     <div class="admin-container">
-        <nav class="admin-sidebar">
+        <nav class="admin-sidebar" id="admin-sidebar">
             <ul class="admin-menu">
                 <li class="active" data-tab="dashboard"><i class="fas fa-tachometer-alt"></i> 대시보드</li>
                 <li data-tab="products"><i class="fas fa-bread-slice"></i> 제품 관리</li>
@@ -440,5 +472,22 @@
     </div>
 
     <script src="admin-script.js"></script>
+    <script>
+        // 모바일 메뉴 토글 기능
+        document.getElementById('mobile-menu-toggle').addEventListener('click', function() {
+            const sidebar = document.getElementById('admin-sidebar');
+            sidebar.classList.toggle('active');
+            
+            // 아이콘 변경
+            const icon = this.querySelector('i');
+            if (sidebar.classList.contains('active')) {
+                icon.classList.remove('fa-bars');
+                icon.classList.add('fa-times');
+            } else {
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            }
+        });
+    </script>
 </body>
 </html> 
