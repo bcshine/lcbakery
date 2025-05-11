@@ -3,21 +3,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger');
     const navLinks = document.querySelector('.nav-links');
     
-    // 모바일 메뉴에 관리자 링크 추가
-    function addAdminLinkToMobileMenu() {
-        // 이미 추가되어 있는지 확인
-        if(!document.querySelector('.nav-links .admin-mobile-link')) {
-            const adminLink = document.createElement('a');
-            adminLink.href = 'admin.html';
-            adminLink.className = 'admin-mobile-link';
-            adminLink.textContent = '관리자';
-            navLinks.appendChild(adminLink);
-        }
-    }
-    
-    // 페이지 로드 시 실행
-    addAdminLinkToMobileMenu();
-    
     hamburger.addEventListener('click', function() {
         navLinks.classList.toggle('active');
     });
