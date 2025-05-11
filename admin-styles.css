@@ -141,13 +141,21 @@ button {
     border: none;
     cursor: pointer;
     color: #777;
-    font-size: 16px;
-    padding: 4px;
+    font-size: 18px;
+    padding: 4px 8px;
     transition: color 0.3s ease;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .toggle-password:hover {
     color: var(--primary-color);
+}
+
+.toggle-password:focus {
+    outline: none;
 }
 
 /* 관리자 대시보드 스타일 */
