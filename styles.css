@@ -817,4 +817,38 @@ p, h1, h2, h3, h4 {
 .admin-link:hover {
     background-color: #8e6c4e;
     color: #fff;
+}
+
+/* 연락처 헤더 스타일 */
+.contact-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.contact-header h2 {
+    margin-bottom: 0;
+}
+
+.admin-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #f5f3ef;
+    color: #8e6c4e;
+    font-size: 16px;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #8e6c4e;
+    transition: all 0.3s ease;
+}
+
+.admin-link:hover {
+    background-color: #8e6c4e;
+    color: #fff;
 } 
