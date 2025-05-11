@@ -851,4 +851,21 @@ p, h1, h2, h3, h4 {
 .admin-link:hover {
     background-color: #8e6c4e;
     color: #fff;
+}
+
+/* 모바일 메뉴 관리자 링크 스타일 */
+.admin-mobile-link {
+    padding: 12px 0;
+    margin-top: 15px;
+    border-top: 1px dashed #8e6c4e;
+    color: #8e6c4e;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    font-family: var(--heading-font);
+    transition: all 0.3s ease;
+}
+
+.admin-mobile-link:hover {
+    color: #e09f3e;
 } 
