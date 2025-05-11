@@ -126,6 +126,30 @@ button {
     margin-top: 10px;
 }
 
+/* 비밀번호 입력 필드와 토글 버튼 스타일 */
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #777;
+    font-size: 16px;
+    padding: 4px;
+    transition: color 0.3s ease;
+}
+
+.toggle-password:hover {
+    color: var(--primary-color);
+}
+
 /* 관리자 대시보드 스타일 */
 .admin-dashboard-page {
     min-height: 100vh;
