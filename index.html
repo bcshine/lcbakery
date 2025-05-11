@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>저탄베이커리 - No 밀가루, No 설탕, No 대체당</title>
+    
+    <!-- 스타일시트 -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- 폰트 -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Gowun+Batang:wght@400;700&family=Hahmlet:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- 파비콘 및 홈 화면 아이콘 -->
+    <link rel="icon" href="image/lclogo.png">
+    <link rel="shortcut icon" href="image/lclogo.png">
+    
+    <!-- iOS 홈 화면 아이콘 설정 -->
+    <link rel="apple-touch-icon" href="image/lclogo.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/lclogo.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/lclogo.png">
+    <link rel="apple-touch-icon" sizes="167x167" href="image/lclogo.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="저탄베이커리">
+    
+    <!-- Android 홈 화면 아이콘 설정 -->
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="저탄베이커리">
+    <meta name="theme-color" content="#8e6c4e">
+</head>
+<body>
+    <!-- 1. 네비게이션 바 -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="brand">
+                <a href="#" class="logo">
+                    <img src="image/lclogo.png" alt="저탄베이커리 로고">
+                </a>
+                <a href="#" class="brand-name">저탄베이커리</a>
+            </div>
+            <div class="nav-links">
+                <a href="#hero">홈</a>
+                <a href="#products">제품</a>
+                <a href="#reviews">후기</a>
+                <a href="#brand-story">브랜드 이야기</a>
+                <a href="#contact">연락처</a>
+            </div>
+            <a href="#products" class="btn-primary">구매하기</a>
+            <div class="hamburger">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 2. Hero 영역 -->
+    <section id="hero" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="image/lclogobg.png" alt="저탄베이커리 로고" class="hero-logo">
+                <h1>저탄베이커리</h1>
+                <p class="slogan">No 밀가루, No 설탕, No 대체당, 그런데도 맛있어요</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 3. 제품 영역 -->
+    <section id="products" class="products">
+        <div class="container">
+            <h2>저탄베이커리 제품</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="image/lc1.jpg" alt="저탄 스콘">
+                    <h3>저탄 스콘</h3>
+                    <p>아몬드가루, 사과, 버터, 달걀, 통밀, 계피가루, 사과의 수분감과 자연 단맛으로 촉촉하고 풍미 있는 스콘</p>
+                    <a href="#" class="btn-product">바구니담기</a>
+                </div>
+                <div class="product-card">
+                    <img src="image/lc2.jpg" alt="저탄 피낭시에">
+                    <h3>저탄 피낭시에</h3>
+                    <p>아몬드가루, 바나나, 버터, 달걀, 계피가루, 바나나의 향과 단맛, 부드럽고 진한 피낭시에</p>
+                    <a href="#" class="btn-product">바구니담기</a>
+                </div>
+                <div class="product-card">
+                    <img src="image/lc3.jpg" alt="저탄 파운드케이크">
+                    <h3>저탄 파운드케이크</h3>
+                    <p>아몬드, 사과, 달걀, 버터, 레몬즙, 촉촉하고 은은한 단맛.</p>
+                    <a href="#" class="btn-product">바구니담기</a>
+                </div>
+                <div class="product-card">
+                    <img src="image/lc4.jpg" alt="저탄 식빵">
+                    <h3>저탄 식빵</h3>
+                    <p>아몬드, 사이리움 허스크, 사과, 달걀, 버터, 소금, 사과향의 담백한 식빵.</p>
+                    <a href="#" class="btn-product">바구니담기</a>
+                </div>
+            </div>
+            <div class="text-center">
+                <a href="#" class="btn-primary">구매하기</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 4. 고객 후기 영역 -->
+    <section id="reviews" class="reviews">
+        <div class="container">
+            <h2>고객 후기</h2>
+            <div class="review-grid">
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"매일 먹어도 질리지 않아요. 건강하게 먹을 수 있는 빵을 찾다가 발견했는데, 정말 만족스럽습니다!"</p>
+                    <span class="reviewer">- 김OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"당뇨가 있어 빵을 포기했었는데, 이제 다시 빵을 먹을 수 있게 되어 너무 행복해요. 가족 모두가 좋아합니다."</p>
+                    <span class="reviewer">- 이OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"저탄수 다이어트 중에도 빵을 포기하지 않아도 된다는 게 얼마나 감사한지 몰라요. 피낭시에가 특히 맛있어요!"</p>
+                    <span class="reviewer">- 박OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"밀가루 없이 이렇게 맛있는 빵을 만들 수 있다니 정말 놀랍습니다. 건강한 재료로 만든 맛있는 빵, 감사합니다."</p>
+                    <span class="reviewer">- 최OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"아이들도 좋아하는 맛이라 온 가족이 함께 먹고 있어요. 건강한 간식을 찾던 중 발견한 보물 같은 곳!"</p>
+                    <span class="reviewer">- 정OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"저당 식빵으로 아침을 시작한 지 한 달, 혈당 조절에 정말 도움이 되고 있어요. 맛도 좋아서 일석이조입니다."</p>
+                    <span class="reviewer">- 강OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"키토 식단을 하고 있는데, 이 빵은 정말 구세주예요. 진짜 빵 맛이 나서 다이어트 중에도 스트레스가 없어요."</p>
+                    <span class="reviewer">- 윤OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"스콘이 정말 일품입니다. 사과의 자연스러운 단맛이 너무 좋아요. 다른 제품들도 계속 시도해보고 싶어요!"</p>
+                    <span class="reviewer">- 조OO님</span>
+                </div>
+                <div class="review-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"정직한 재료로 만든다는 게 느껴져요. 건강과 맛, 두 마리 토끼를 다 잡은 베이커리. 항상 응원합니다!"</p>
+                    <span class="reviewer">- 한OO님</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 5. 브랜드 이야기 영역 -->
+    <section id="brand-story" class="brand-story">
+        <div class="container">
+            <h2>저탄 브랜드 이야기</h2>
+            
+            <div class="story-section">
+                <h3>브랜드 철학 | 정직한 재료, 자연 그대로의 맛</h3>
+                <p>"우리는 '빵을 포기하지 않고도 건강할 수 있다'는 믿음에서 출발했습니다.<br>
+                밀가루 없이도, 설탕 없이도, 대체당 없이도, 진짜 맛있는 빵을 만들 수 있다는 확신.<br>
+                그 확신은 우리가 정직한 재료만을 고집하게 만들었고,<br>
+                자연이 주는 맛과 향을 최대한 살리는 기술로 이어졌습니다."</p>
+                
+                <div class="values">
+                    <div class="value-item">
+                        <img src="image/ing1.jpg" alt="진짜 재료" class="value-icon">
+                        <h4>진짜 재료</h4>
+                        <p>밀가루 대신 아몬드가루, 설탕 대신 사과와 바나나 같은 자연식 재료</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="image/ing2.jpg" alt="불필요한 것은 덜고" class="value-icon">
+                        <h4>불필요한 것은 덜고</h4>
+                        <p>합성첨가물, 감미료, 보존제는 넣지 않습니다</p>
+                    </div>
+                    <div class="value-item">
+                        <img src="image/ing3.jpg" alt="포기하지 않아도 되는 빵" class="value-icon">
+                        <h4>포기하지 않아도 되는 빵</h4>
+                        <p>건강한 식단 중에도 매일 즐길 수 있도록</p>
+                    </div>
+                </div>
+                
+                <p class="motto">👉 "몸도 마음도 가볍게, 빵을 먹는 행복은 그대로."</p>
+            </div>
+            
+            <div class="story-section history-section">
+                <h3>브랜드 히스토리 | '건강을 위한 첫 번째 반죽'</h3>
+                <div class="history-content">
+                    <div class="history-image">
+                        <img src="image/lcbr1.jpg" alt="저탄베이커리 이야기">
+                    </div>
+                    <div class="history-text">
+                        <p>"처음 시작은 가족을 위한 한 끼였습니다."</p>
+                        
+                        <p>어머니가 당뇨로 돌아가셨고, 저희 형제도 당이 올라오고 있었습니다.</p>
+                        <p>이렇게는 곤란하다. 탄수화물을 끊어야겠다. 결심했습니다.</p>
+                        <p>그래서 직접 만들기 시작하였습니다. '당이 오르지 않고, 맛도 좋은 빵'</p>
+                    </div>
+                </div>
+                
+                <div class="history-content reverse">
+                    <div class="history-image">
+                        <img src="image/lcbr2.jpg" alt="저탄베이커리 첫 번째 반죽">
+                    </div>
+                    <div class="history-text">
+                        <p>수십 번의 실패 끝에, 밀가루 대신 아몬드가루,<br>
+                        설탕 대신 사과를 넣은 첫 번째 건강한 반죽이 완성되었습니다.</p>
+                        
+                        <p>수십번의 시행착오끝에, 드디어 완성했습니다.<br>
+                        "진짜 빵 같아. 그런데 부담이 없어. 매일 먹고 싶어."<br>
+                        그 말이 이 브랜드의 시작이 되었습니다.</p>
+                    </div>
+                </div>
+                
+                <div class="history-content">
+                    <div class="history-image">
+                        <img src="image/lcbr3.jpg" alt="저탄베이커리 성장">
+                    </div>
+                    <div class="history-text">
+                        <p>이후 SNS를 통해 소문이 퍼졌고,<br>
+                        비슷한 고민을 가진 사람들이 하나둘 찾아오면서<br>
+                        지금의 저탄베이커리 브랜드로 성장하게 되었습니다.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="brand-motto">
+                <p>"당이 없어도, 사랑은 담았습니다."</p>
+                <p>"매일 먹어도 좋은 빵, 밀가루 없이 구워내다."</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 6. 연락처 영역 -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>연락처</h2>
+            <div class="contact-info">
+                <div class="info-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <p>서울특별시 강남구 테헤란로 123 저탄빌딩 1층</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>02-123-4567</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-fax"></i>
+                    <p>02-123-4568</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>info@lotanbakery.com</p>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="social-link"><i class="fab fa-blogger"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <!-- 7. 챗봇 버튼 -->
+    <div class="chatbot-button">
+        <a href="https://chatgpt.com/g/g-68200420acac81918a5897c00c78f1ce-jeotanbeikeori" target="_blank" id="chatbot-toggle"><i class="fas fa-comments"></i> 저탄챗봇</a>
+    </div>
+    
+    <!-- 8. 모바일 고정 구매 버튼 -->
+    <div class="mobile-purchase">
+        <a href="#products" class="btn-primary">구매하기</a>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
