@@ -177,7 +177,7 @@ section:nth-child(even) {
 /* Hero 영역 */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('image/lcbr3.jpg');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./image/lcbr3.jpg');
     background-size: cover;
     background-position: center;
     display: flex;
