@@ -150,6 +150,7 @@ section:nth-child(even) {
     font-size: 1.4rem;
     font-weight: 600;
     color: var(--primary-color);
+    white-space: nowrap;
 }
 
 .nav-links {
